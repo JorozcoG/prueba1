@@ -10,38 +10,54 @@
 <body>
 <form>
   <fieldset>
-  <legend>Formulario</legend>
+  <legend><h1>Formulario</h1></legend>
  
   <div>
     <label for="nombre">Nombre:</label>
     <input type="text" id="nombre" />
   </div>
- 
+  <br> 
   <div>
     <label for="apellidos">Apellidos:</label>
     <input type="text" id="apellidos"  />
   </div>
-  
-  
+  <br> 
   <div>
     <label for="apellidos">Edad:</label>
     <input type="number"  max="50" id="edad" size="8" />
   </div>
-
-
+   <div>
+   <p>
+    Sexo:
+     <input type="radio" name="gender" value="male"> Masculino <input type="radio" name="gender" value="female"> Femenino<br>
+  </p>
+</div>
   
   <div>
     <label for="domi">Domicilio:</label>
     <input type="text" id="domi" size="35" />
   </div>
-
-   
+  <br>
   <div>
     <label for="nacio">Nacionalidad:</label>
-    <input type="text" id="nacio"  />
+       <select >
+         <option selected></option>
+         <option value="1380">México</option>
+         <option value="1410">Mónaco</option>
+         <option value="1420">Mongolia</option>
+         <option value="1430">Montserrat</option>
+         <option value="1440">Mozambique</option>
+         <option value="1480">Nepal</option>
+         <option value="1490">Nicaragua</option>
+         <option value="1500">Níger</option>
+         <option value="1510">Nigeria</option>
+         <option value="1520">Noruega</option>
+         <option value="1530">Nueva Caledonia</option>
+         <option value="1540">Nueva Zelandia</option>  
+       </select>
+   
   </div>
-
-  
+  <br>
   <div>
     <label for="tel">Telefono/celular:</label>
     <input type="text" id="tel" size="18" />
