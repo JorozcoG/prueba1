@@ -2,7 +2,8 @@
 
 <html>
     <head>
- <link type="text/css" rel="stylesheet" href="app.css">       
+ <link type="text/css" rel="stylesheet" href="app.css">
+ <script type="text/javascript" src="app.js"></script>       
         <meta charset="utf-8">
         <title>MI PRIMER COMMIT</title>
     </head>
@@ -24,7 +25,7 @@
   <br> 
   <div>
     <label for="apellidos">Edad:</label>
-    <input type="number" min="1" max="50" id="edad" size="8" />
+    <input type="number" id="edad" min="1" max="50" id="edad" size="8" oninput="edad" requerid />
   </div>
    <div>
    <p>
@@ -35,7 +36,7 @@
   
   <div>
     <label for="domi">Domicilio:</label>
-    <input type="text" id="domi" size="35" maxlenth="100" placeholder="Ingrese su Domicilio" />
+    <input type="text" id="domi" size="35" maxlenth="100" placeholder="Ingrese su Domicilio" oninput="domi"requerid />
   </div>
   <br>
   <div>
@@ -60,10 +61,10 @@
   <br>
   <div>
     <label for="tel">Telefono/celular:</label>
-    <input type="text" id="tel" size="18" maxlength="12" placeholder="Ingrese su Numero" />
+    <input type="text" id="tel" size="18" maxlength="12" placeholder="Ingrese su Numero" oninput="tel" requerid />
   </div>
    <br>
-  <input type="submit" id="enviar" value="Aceptar">
+  <input type="submit" id="enviar" value="Aceptar" onclick="enviarValidar()">
   <input type="reset" ide="borrar"  value="Borrar todo">
   
 
