@@ -8,18 +8,18 @@
     </head>
 
 <body>
-<form>
+<form method="post" action="#">
   <fieldset>
   <legend><h1>Formulario</h1></legend>
  
   <div>
     <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" />
+    <input type="text" id="nombre" maxlength="20" placeholder="Ingrese su Nombre" oninput="validar('nombre')" required pattern="([a-z]{3,20})" />
   </div>
   <br> 
   <div>
     <label for="apellidos">Apellidos:</label>
-    <input type="text" id="apellidos"  />
+    <input type="text" id="apellidos" maxlength="20" placeholder="Ingrese su Apellido" oninput="validar('apellido')" required pattern="([a-z]{3,20})"  />
   </div>
   <br> 
   <div>
@@ -35,7 +35,7 @@
   
   <div>
     <label for="domi">Domicilio:</label>
-    <input type="text" id="domi" size="35" />
+    <input type="text" id="domi" size="35" maxlenth="100" placeholder="Ingrese su Domicilio" />
   </div>
   <br>
   <div>
@@ -60,11 +60,12 @@
   <br>
   <div>
     <label for="tel">Telefono/celular:</label>
-    <input type="text" id="tel" size="18" />
+    <input type="text" id="tel" size="18" maxlength="12" placeholder="Ingrese su Numero" />
   </div>
    <br>
-  <input type="reset" value="Borrar todo">
-  <button>Enviar</button>
+  <input type="submit" id="enviar" value="Aceptar">
+  <input type="reset" ide="borrar"  value="Borrar todo">
+  
 
 </fieldset>
 </form>
